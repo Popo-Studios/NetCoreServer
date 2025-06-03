@@ -26,12 +26,6 @@ namespace NetCoreServer {
 		std::vector<uint8_t> rawData;
 	};
 
-	template<typename ContextType>
-	class AbstractPacketHandler {
-	public:
-		virtual void rawHandle(ContextType& context, ENetPeer* peer, const std::vector<uint8_t>& rawData) = 0;
-	};
-
 	enum class PredefinedPacketType : uint16_t {
 		CreateSession = std::numeric_limits<uint16_t>::max(),
 		JoinSession = std::numeric_limits<uint16_t>::max() - 1,

@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\server">
+      <UniqueIdentifier>{561d74e3-b575-4942-98b8-619e56eb6b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\handler">
+      <UniqueIdentifier>{8e8e7c1f-b19c-4996-85ff-4bb076825947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\session">
+      <UniqueIdentifier>{4c794bd9-5f58-45ca-9265-91adf2375fd0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.hpp">
@@ -24,9 +33,6 @@
     <ClInclude Include="Logger.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Server.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Error.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -36,7 +42,28 @@
     <ClInclude Include="Packet.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Session.hpp">
+    <ClInclude Include="Server.hpp">
+      <Filter>Header Files\server</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractHandler.hpp">
+      <Filter>Header Files\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="MainServer.hpp">
+      <Filter>Header Files\server</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionServer.hpp">
+      <Filter>Header Files\server</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSession.hpp">
+      <Filter>Header Files\session</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionHandler.hpp">
+      <Filter>Header Files\handler</Filter>
+    </ClInclude>
+    <ClInclude Include="SessionManager.hpp">
+      <Filter>Header Files\session</Filter>
+    </ClInclude>
+    <ClInclude Include="NetCoreStructure.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -53,7 +80,13 @@
     <ClCompile Include="Packet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Session.cpp">
+    <ClCompile Include="AbstractSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SessionServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

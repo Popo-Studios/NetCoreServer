@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -151,17 +151,25 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="AbstractSession.hpp" />
     <ClInclude Include="Error.hpp" />
     <ClInclude Include="framework.hpp" />
+    <ClInclude Include="AbstractHandler.hpp" />
     <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="MainServer.hpp" />
     <ClInclude Include="NetCoreServer.hpp" />
     <ClInclude Include="Packet.hpp" />
     <ClInclude Include="Server.hpp" />
     <ClInclude Include="pch.h" />
-    <ClInclude Include="Session.hpp" />
+    <ClInclude Include="NetCoreStructure.hpp" />
+    <ClInclude Include="SessionHandler.hpp" />
+    <ClInclude Include="SessionManager.hpp" />
+    <ClInclude Include="SessionServer.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AbstractSession.cpp" />
     <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="MainServer.cpp" />
     <ClCompile Include="Packet.cpp" />
     <ClCompile Include="Server.cpp" />
     <ClCompile Include="pch.cpp">
@@ -170,7 +178,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Session.cpp" />
+    <ClCompile Include="SessionServer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
